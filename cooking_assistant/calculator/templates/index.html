@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for ingredient, amount in recipe.items %}
+    <p>{{ingredient}} : {{amount}}</p>
+    {% empty %}
+    <p>Такого рецепта нет</p>
+    {% endfor %}
+</body>
+</html>
